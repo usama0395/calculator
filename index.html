@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="main">
+
+<input placeholder="0" type="text" id="name">
+
+<table>
+<tr>
+    
+    <td onclick="removeAll()"
+    style="background-color:red;" colspan="2">AC</td>
+  <td onclick="remove()" 
+    style="background-color:gray;">,</td>
+    <td onclick="getNumber('*')" style="background-color:gray;">x</td>
+</tr>
+<tr>
+   <td onclick="getNumber('7')">7</td>
+    <td onclick="getNumber('8')">8</td>
+    <td onclick="getNumber('9')">9</td>
+    <td onclick="getNumber('-')" 
+    style="background-color:gray;">-</td>
+</tr>
+<tr>
+    <td onclick="getNumber('4')">4</td>
+    <td onclick="getNumber('5')">5</td>
+    <td onclick="getNumber('6')">6</td>
+    <td onclick="getNumber('+')" style="background-color:gray;">+</td>
+</tr>
+
+<tr>
+    <td onclick="getNumber('1')">1</td>
+    <td onclick="getNumber('2')">2</td>
+    <td onclick="getNumber('3')">3</td>
+    <td onclick="getNumber('/')" style="background-color:gray";>/</td>
+</tr>
+<tr>
+    <td onclick="getNumber('0')">0</td>
+    <td onclick="getNumber('.')">.</td>
+    <td onclick="getNumber('%')">%</td>
+    <td onclick="getCalculate()"
+    style="background-color: darkslateblue;">=</td>
+</tr>
+</table>
+</div>
+
+</body>
+<script src="app.js"></script>
+</html>
